@@ -11,6 +11,7 @@ import type { LocalData, Product, FixedCost } from "@/types/startup"
 import { useLanguage } from "@/contexts/language-context"
 
 interface StepProps {
+  language: string;
   localData: LocalData
   updateLocalData: (data: Partial<LocalData>) => void
   hideLtvCacSection?: boolean

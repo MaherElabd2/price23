@@ -15,6 +15,7 @@ import type { LocalData, Product, CostItem, FixedCost, CostItemType } from "@/ty
 import { t as startupT } from "@/lib/startup-translations"
 
 interface StepProps {
+  language: string;
   localData: LocalData
   updateLocalData: (data: Partial<LocalData>) => void
   updateProduct: (productId: string, updates: Partial<Product>) => void

@@ -14,8 +14,9 @@ import { useLanguage } from "@/contexts/language-context"
 import { tKey } from "@/lib/i18n-helpers"
 
 interface Step6StrategicGoalsProps {
-  localData: LocalData
-  updateLocalData: (data: Partial<LocalData>) => void
+  localData: LocalData;
+  updateLocalData: (updates: Partial<LocalData>) => void;
+  language: string;
 }
 
 const getPrimaryStrategies = (language: "ar" | "en") => {

@@ -12,7 +12,7 @@ import type { LocalData } from "@/types/startup"
 interface StepProps {
   data: LocalData
   onDataChange: (data: Partial<LocalData>) => void
-  language: string // Changed from "ar" | "en" to string to match parent component
+  language: string; 
 }
 
 export { Step0BasicInfo }

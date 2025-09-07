@@ -12,9 +12,9 @@ import { startupT } from "@/lib/startup-translations"
 import type { LocalData, Product, Competitor } from "@/types/startup"
 
 interface StepProps {
+  language: string;
   localData: LocalData
   updateLocalData: (data: Partial<LocalData>) => void
-  language: string
 }
 
 export default function Step4PricingCompetition({ localData, updateLocalData, language }: StepProps) {

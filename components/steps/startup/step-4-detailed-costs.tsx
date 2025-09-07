@@ -15,7 +15,7 @@ import { startupT } from "@/lib/startup-translations"
 interface StepProps {
   localData: LocalData
   updateLocalData: (data: Partial<LocalData>) => void
-  language: string
+  language: string; 
 }
 
 export default function Step4DetailedCosts({ localData, language }: StepProps) {

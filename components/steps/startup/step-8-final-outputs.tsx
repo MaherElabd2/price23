@@ -325,6 +325,7 @@ import type { FinancialResult } from "@/types/startup"
 import type { LocalData, Product } from "@/types/startup"
 
 interface StepProps {
+  language: string;
   localData: LocalData
   updateLocalData: (data: Partial<LocalData>) => void
   language: "ar" | "en" // Added language prop

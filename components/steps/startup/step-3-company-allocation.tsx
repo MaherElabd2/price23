@@ -15,6 +15,7 @@ import { useLanguage } from "@/contexts/language-context"
 import { t as startupT } from "@/lib/startup-translations"
 
 interface StepProps {
+  language: string;
   localData: LocalData
   updateLocalData: (data: Partial<LocalData>) => void
 }
